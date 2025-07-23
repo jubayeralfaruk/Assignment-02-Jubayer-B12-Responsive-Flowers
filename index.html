@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flowers</title>
+    <!-- Font Awesome cdm -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Tailwind CSS cdm -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Custom CSS -->
+     <style>
+        /* Inter Font */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+        .inter-font {
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        }
+        
+        /* Noto Serif  Font*/
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+        
+        .noto-serif-font {
+        font-family: "Noto Serif", serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+        font-variation-settings:
+            "wdth" 100;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+        
+        .eb-garamond-font {
+        font-family: "EB Garamond", serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        }
+
+
+
+
+        body{
+            color: rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body class="inter-font">
+    <header class="text-rgba(0, 0, 0, 0.5) max-w-6xl m-auto">
+        <nav class="flex items-center justify-between pl-5 pr-5 mt-3">
+            <!-- Navbar Brand -->
+            <div class="w-16">
+                <img class="w-auto" src="./assets/logo.png" alt="">
+            </div>
+
+            <!-- Menu bar -->
+             <div class="flex ">
+                <!-- Menu Item menu-container-01-->
+                <div class="hidden sm:block">
+                    <ul class="flex gap-12 ">
+                        <li class="text-black"><a href="#">Home</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">About us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Navbar Card menu-container-02-->
+                <div class="ml-12">
+                    <div class="card text-[#000000]">
+                        <a href="#">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="ml-1">Cart ($56)</span>
+                        </a>
+                    </div>
+                </div>
+             </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <div class="hero mx-4 mb-16 mt-7 lg:flex lg:flex-row-reverse lg:justify-between lg:items-center">
+            <!-- hero img -->
+            <div class="hero-img w-full">
+                <img class="w-full" src="./assets/hero-flower.png" alt="">
+            </div>
+            <div class="hero-text">
+                <div class="hero-title mt-7 noto-serif-font lg:w-[517px]">
+                    <h2 class="text-[#000000] font-extrabold text-3xl lg:text-6xl mb-3">
+                        ALWAYS <span class="text-[#E95A08]">FRESH </span> <br>
+                        <span class=" text-[#E95A08]">FLOWERS</span>
+                    </h2>
+                </div>
+                <div class="hero-description max-w-[400px] lg:max-w-[400px], text-5">
+                    <p>
+                        Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh flowers that are perfect for any occasion. 
+                    </p>
+                </div>
+            </div>
+            </div>
+    </header>
+
+    <main class="max-w-6xl m-auto">
+
+        <!-- Card Section -->
+         <section class="card-plants mx-4 mb-[50px] lg:mb-[200px]" >
+            <h3 class="text-3xl font-bold text-center text-black lg:text-[3rem]">
+                <span class="text-[#E95A08]">Our</span> Plants                
+            </h3>
+            <p class="w-[370px] lg:w-[888px] text-center m-auto">
+                Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.
+            </p>
+
+            <!-- cards-container -->
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-5">
+                <!-- Card-01 -->
+                <div class="">
+                    <img class="w-full" src="./assets/sample-flower-image.png" alt="">
+                    
+                    <h6 class="font-medium lg:text-[22px] text-[#111111] text-center mt-7">Lily Blossom</h6>
+                    <p class="font-bold lg:text-[22px] text-[#111111] text-center mb-7">20 USD</p>
+                    <button class="font-semibold bg-[#E95A08] text-white w-full py-5" type="button">
+                        ADD TO CART
+                    </button>
+                </div>
+                <!-- Card-02 -->
+                <div class="">
+                    <img class="w-full" src="./assets/sample-flower-image.png" alt="">
+                    
+                    <h6 class="font-medium lg:text-[22px] text-[#111111] text-center mt-7">Lily Blossom</h6>
+                    <p class="font-bold lg:text-[22px] text-[#111111] text-center mb-7">20 USD</p>
+                    <button class="font-semibold bg-[#E95A08] text-white w-full py-5" type="button">
+                        ADD TO CART
+                    </button>
+                </div>
+                <!-- Card-03 -->
+                <div class="">
+                    <img class="w-full" src="./assets/sample-flower-image.png" alt="">
+                    
+                    <h6 class="font-medium lg:text-[22px] text-[#111111] text-center mt-7">Lily Blossom</h6>
+                    <p class="font-bold lg:text-[22px] text-[#111111] text-center mb-7">20 USD</p>
+                    <button class="font-semibold bg-[#E95A08] text-white w-full py-5" type="button">
+                        ADD TO CART
+                    </button>
+                </div>
+                <!-- Card-04 -->
+                <div class="">
+                    <img class="w-full" src="./assets/sample-flower-image.png" alt="">
+                    
+                    <h6 class="font-medium lg:text-[22px] text-[#111111] text-center mt-7">Lily Blossom</h6>
+                    <p class="font-bold lg:text-[22px] text-[#111111] text-center mb-7">20 USD</p>
+                    <button class="font-semibold bg-[#E95A08] text-white w-full py-5" type="button">
+                        ADD TO CART
+                    </button>
+                </div>
+                <!-- Card-05 -->
+                <div class="">
+                    <img class="w-full" src="./assets/sample-flower-image.png" alt="">
+                    
+                    <h6 class="font-medium lg:text-[22px] text-[#111111] text-center mt-7">Lily Blossom</h6>
+                    <p class="font-bold lg:text-[22px] text-[#111111] text-center mb-7">20 USD</p>
+                    <button class="font-semibold bg-[#E95A08] text-white w-full py-5" type="button">
+                        ADD TO CART
+                    </button>
+                </div>
+                <!-- Card-06 -->
+                <div class="">
+                    <img class="w-full" src="./assets/sample-flower-image.png" alt="">
+                    
+                    <h6 class="font-medium lg:text-[22px] text-[#111111] text-center mt-7">Lily Blossom</h6>
+                    <p class="font-bold lg:text-[22px] text-[#111111] text-center mb-7">20 USD</p>
+                    <button class="font-semibold bg-[#E95A08] text-white w-full py-5" type="button">
+                        ADD TO CART
+                    </button>
+                </div>
+                <!-- Card-07 -->
+                <div class="">
+                    <img class="w-full" src="./assets/sample-flower-image.png" alt="">
+                    
+                    <h6 class="font-medium lg:text-[22px] text-[#111111] text-center mt-7">Lily Blossom</h6>
+                    <p class="font-bold lg:text-[22px] text-[#111111] text-center mb-7">20 USD</p>
+                    <button class="font-semibold bg-[#E95A08] text-white w-full py-5" type="button">
+                        ADD TO CART
+                    </button>
+                </div>
+                <!-- Card-08 -->
+                <div class="">
+                    <img class="w-full" src="./assets/sample-flower-image.png" alt="">
+                    
+                    <h6 class="font-medium lg:text-[22px] text-[#111111] text-center mt-7">Lily Blossom</h6>
+                    <p class="font-bold lg:text-[22px] text-[#111111] text-center mb-7">20 USD</p>
+                    <button class="font-semibold bg-[#E95A08] text-white w-full py-5" type="button">
+                        ADD TO CART
+                    </button>
+                </div>
+            </div>
+         </section>
+
+         <!--  -->
+    </main>
+
+
+
+
+    <footer class="h-96 bg-amber-600"></footer>
+</body>
+</html>
